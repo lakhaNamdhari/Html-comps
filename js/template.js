@@ -7,7 +7,7 @@
 	}
 	
 	ns.Component = function( el, attr ){
-		console.log( "Tab()" );
+		console.log( "Component()" );
 		
 		if ( el ){
 			if ( el.jquery ){

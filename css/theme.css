@@ -96,3 +96,49 @@
 	top: 0;
 	right: 3px;
  }
+ 
+ 
+ /* 
+ *  Selectbox
+ ***************/
+ 
+ .selectbox {
+	position: relative;
+	width: 100px;
+ }
+ 
+ .selectbox select {
+	display: none;
+ }
+ 
+ .selectbox .selected-option{
+	display: inline-block;
+	width: inherit;
+	border: 2px solid #BBB;
+	padding: 2px 5px;
+	box-sizing: border-box;
+ }
+ 
+ .selectbox .fa-sort-down{
+	position: absolute;
+	right: 8px;
+ }
+ 
+ .selectbox .option-list{
+	display: block;
+	border: 1px solid #DDD;
+	width: inherit;
+	margin: 0;
+	position: absolute;
+	display: none;
+	box-sizing: border-box;
+ }
+
+ .selectbox .option-list li{	 
+	padding: 2px 5px;
+ }
+
+ .selectbox .option-list li:hover{	 
+	background: #faa77b;
+	color: #fff;
+ }

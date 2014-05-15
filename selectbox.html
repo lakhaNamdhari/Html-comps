@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Component</title>
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/typography.css" />
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/theme.css" />
+	</head>
+	<body>
+		<!-- Component STARTS -->
+		<div class="selectbox">
+			<select data-name="selectbox" name="test" id="test">
+				<option value="Org">Orange</option>
+				<option value="App">Apple</option>
+				<option value="Ban">Banana</option>
+				<option value="Pine">Pineapple</option>
+				<option value="Stra">Strawberry</option>
+				<option value="Cher">Cherry</option>
+			</select>
+			<span data-id="selectedOption" class="selected-option">Orange
+				<span class="fa fa-sort-down"></span>
+			</span>
+			<ul data-id="optionList" class="option-list">
+				<li value="Org">Orange</li>
+				<li value="App">Apple</li>
+				<li value="Ban">Banana</li>
+				<li value="Pine">Pineapple</li>
+				<li value="Stra">Strawberry</li>
+				<li value="Cher">Cherry</li>
+			</ul>
+		</div>
+		<!-- Component ENDS> -->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/selectbox.js"></script>
+		<script src="js/init.js"></script>
+	</body>
+</html>
