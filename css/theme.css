@@ -1,4 +1,22 @@
+/*
 
+	:: Style Index
+	--------------------------------
+	SNO		NAME			LINE NO
+	--------------------------------
+	1.		Tab  			21
+	2.		Accordian		35
+	3.		Menu			53
+	4.		Scrollbar		82
+	5.		Selectbox		119
+	6.		Carousel		167
+
+
+
+	
+	
+	
+*/
 
 /* 
  *  Tab
@@ -144,3 +162,33 @@
 	background: #faa77b;
 	color: #fff;
  }
+ 
+ 
+/* 
+ *  Carousel
+ ***************/
+ 
+ .carousel{
+	width: 259px;
+	overflow: hidden;
+	position: relative;
+ }
+ 
+ .carousel .slides{
+	width: 1200px;
+	
+ }
+ 
+ .carousel .fa-chevron-circle-left, .fa-chevron-circle-right{
+	position: absolute;
+	font-size: 32px;
+	color: #fff;
+	/* verticall center */
+	top: 50%;
+	margin-top: -16px;
+ }
+
+ .carousel .fa-chevron-circle-right{
+	right: 0;
+ }
+ 

@@ -14,7 +14,7 @@
 	
 	for ( i = 0; i < comps.length; i++ ){
 		className = comps[i].getAttribute("data-name");
-		className = className.charAt(0).toUpperCase() + className.slice(1);
+		//className = className.charAt(0).toUpperCase() + className.slice(1);
 		new ns[ className ]( comps[i] );
 	}
 	
