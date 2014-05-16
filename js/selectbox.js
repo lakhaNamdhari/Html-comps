@@ -39,13 +39,27 @@
 			console.log( "Selectbox.initElements()" );
 			
 			// The component wrapper
-			this.cache.comp = this.$el.parent();
+			//this.cache.comp = this.$el.parent();
+			this.cache.comp = $('<div class="selectbox">')
+									.insertBefore( this.$el )
+									.append( this.$el );
 			
 			// The Selected Option
-			this.cache.selected = this.cache.comp.find("[data-id=selectedOption]");
+			//this.cache.selected = this.cache.comp.find("[data-id=selectedOption]");
+			this.cache.selected = $('<span data-id="selectedOption" class="selected-option">')
+										.appendTo( this.cache.comp );
 			
 			// The option List
-			this.cache.optionList = this.cache.comp.find("[data-id=optionList]");
+			//this.cache.optionList = this.cache.comp.find("[data-id=optionList]");
+			this.cache.optionList = $('<ul data-id="optionList" class="option-list">')
+										.appendTo( this.cache.comp );
+										
+			// Replicate options to Option-List
+			this.cache.optionList.html( this.$el.html().replace(/option/g, "li") );
+			
+			// Setting Selected Option
+			this.cache.selected.html( this.$el.find("option:selected").text() + '<span class="fa fa-sort-down"></span>' );
+			
 		},
 
 		bindEvents: function(){

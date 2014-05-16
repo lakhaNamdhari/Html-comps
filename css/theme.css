@@ -117,6 +117,7 @@
 	border: 2px solid #BBB;
 	padding: 2px 5px;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
  }
  
  .selectbox .fa-sort-down{
@@ -132,6 +133,7 @@
 	position: absolute;
 	display: none;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
  }
 
  .selectbox .option-list li{	 
